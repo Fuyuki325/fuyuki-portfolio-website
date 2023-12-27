@@ -13,15 +13,15 @@ export default function Home() {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 justify-between justify-items-center p-0 m-0 box-border gap-8 px-40">
+    <div className="grid grid-cols-1 lg:grid-cols-2 justify-between justify-items-center p-0 m-0 box-border gap-20 px-20">
       
       <Image imgURL={king.src} />
-      <div className="h-full rounded-xl shadow-amber-950 shadow-2xl">
+      <div className="h-full rounded-xl shadow-amber-950 shadow-2xl col-span-2 lg:col-span-1">
         <div className="flex flex-col items-center h-full bg-red-500 ">
-          <p className='flex flex-1 text-4xl items-center lg:text-6xl text-center font-mono'>Fuyuki Malahom</p>
-          <p className='flex flex-1 text-4xl items-center lg:text-6xl text-center font-mono'>Software Engineer</p>
+          <p className='flex flex-1 text-2xl items-center lg:text-6xl text-center font-mono'>Fuyuki Malahom</p>
+          <p className='flex flex-1 text-2xl items-center lg:text-6xl text-center font-mono'>Software Engineer</p>
           <div className='flex flex-2 w-full justify-around items-center mb-2'>
-            <button className='flex-1 h-full bg-purple-500 shadow-2xl rounded-full py-2 ml-2 text-lg lg:text-xl font-mono' onClick={handlePress}>
+            <button className='flex-1 h-full bg-purple-500 shadow-2xl rounded-full py-2 ml-2 text-lg md:text-2xl font-mono' onClick={handlePress}>
               Get in touch
             </button>
             <div className='flex flex-1 justify-around items-center'>
@@ -36,8 +36,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div >test</div>
-      <div >test2</div>
+      <div className='flex justify-center col-span-2 lg:col-span-1'>
+        <Image imgURL={LinkedIn.src} />
+      </div>
+      <div className='flex justify-center col-span-2 lg:col-span-1 bg-blue-600'>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive</p>
+      </div>
     </div>
   );
 }

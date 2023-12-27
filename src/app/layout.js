@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className='p-0 m-0 box-border'>
       <body className={inter.className}>
-        <div className='relative p-0 m-0 box-border h-screen w-full'>
+        <div className='relative p-0 m-0 box-border h-full w-full'>
 
         <div className='absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-yellow-400 from-30% via-red-400 to-blue-400 to-70% bg-300% animate-color filter'>  
         </div>
